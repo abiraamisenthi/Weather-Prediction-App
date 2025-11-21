@@ -1,0 +1,153 @@
+.weather-alerts {
+  margin: 30px 0;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.weather-alerts h3 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.alerts-loading {
+  text-align: center;
+  padding: 30px;
+  color: #666;
+}
+
+.spinner-small {
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #667eea;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 15px;
+}
+
+.no-alerts {
+  text-align: center;
+  padding: 40px;
+  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+  border-radius: 15px;
+  color: #333;
+}
+
+.no-alerts-icon {
+  font-size: 3rem;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.alerts-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.alert-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-left: 5px solid;
+  transition: all 0.3s ease;
+  animation: slideInRight 0.4s ease-out;
+}
+
+.alert-card:hover {
+  transform: translateX(5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.alert-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.alert-icon {
+  font-size: 2.5rem;
+  flex-shrink: 0;
+}
+
+.alert-title-section {
+  flex: 1;
+}
+
+.alert-title-section h4 {
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.alert-severity {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  color: white;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.alert-description {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  padding-left: 10px;
+  border-left: 3px solid #e0e0e0;
+}
+
+.alert-times {
+  background: #f8f9fa;
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+.alert-times p {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 5px 0;
+}
+
+.alert-sender {
+  font-size: 0.85rem;
+  color: #888;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .weather-alerts h3 {
+    font-size: 1.5rem;
+  }
+
+  .alert-card {
+    padding: 15px;
+  }
+
+  .alert-header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .alert-icon {
+    font-size: 2rem;
+  }
+}

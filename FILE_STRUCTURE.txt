@@ -1,0 +1,81 @@
+WEATHER PREDICTION APP - COMPLETE FILE STRUCTURE
+================================================
+
+Root Directory:
+weather-prediction-app/
+├── client/                     # React Frontend
+├── server/                     # Express Backend
+├── README.md                   # Main documentation
+├── SETUP_GUIDE.md             # Detailed setup instructions
+├── QUICK_START.md             # Quick start guide
+├── PROJECT_OVERVIEW.md        # Technical overview
+├── .gitignore                 # Git ignore rules
+└── FILE_STRUCTURE.txt         # This file
+
+CLIENT FOLDER (React Frontend):
+================================
+client/
+├── public/
+│   └── index.html             # HTML template
+├── src/
+│   ├── components/
+│   │   ├── SearchBar.js       # Search input component
+│   │   ├── WeatherDisplay.js  # Current weather component
+│   │   ├── ForecastDisplay.js # Forecast component
+│   │   └── SearchHistory.js   # History component
+│   ├── services/
+│   │   └── weatherService.js  # API service layer
+│   ├── styles/
+│   │   ├── App.css           # Main app styles
+│   │   ├── SearchBar.css     # Search bar styles
+│   │   ├── WeatherDisplay.css # Weather card styles
+│   │   ├── ForecastDisplay.css # Forecast styles
+│   │   └── SearchHistory.css  # History styles
+│   ├── App.js                # Main App component
+│   └── index.js              # React entry point
+└── package.json              # Frontend dependencies
+
+SERVER FOLDER (Express Backend):
+=================================
+server/
+├── models/
+│   └── SearchHistory.js       # MongoDB schema
+├── routes/
+│   ├── weather.js            # Weather endpoints
+│   └── searchHistory.js      # History endpoints
+├── server.js                 # Server entry point
+├── .env.example              # Environment template
+└── package.json              # Backend dependencies
+
+DOCUMENTATION FILES:
+====================
+1. README.md - Main project documentation with features and usage
+2. SETUP_GUIDE.md - Step-by-step installation instructions
+3. QUICK_START.md - 5-minute quick start guide
+4. PROJECT_OVERVIEW.md - Technical architecture and details
+
+KEY FILES DESCRIPTION:
+======================
+
+Frontend Components:
+- SearchBar.js: Handles city search input and geolocation
+- WeatherDisplay.js: Shows current weather with details
+- ForecastDisplay.js: Displays 5-day forecast cards
+- SearchHistory.js: Lists recent weather searches
+
+Backend Files:
+- server.js: Express server configuration and routes
+- weather.js: Weather API endpoints (current, forecast, coordinates)
+- searchHistory.js: History CRUD operations
+- SearchHistory.js: MongoDB model for search records
+
+Styling:
+- App.css: Global styles, gradients, animations
+- Component CSS files: Specific styling for each component
+
+Configuration:
+- package.json (client): React dependencies and scripts
+- package.json (server): Express dependencies and scripts
+- .env: Environment variables (API key, MongoDB URI, port)
+
+TOTAL FILES: 25
